@@ -1,2 +1,292 @@
 # PsicologaRaquel
 Fiz um site para apresentar o trabalho de uma amiga como psicóloga, as informações estão como exemplo pois ela irá preencher mais para frente. Utilizei HTML, CSS, Javascript e Bootstrap no projeto.
+Código HTML e o Script em JS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raquel Cerqueira - Psicóloga</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Seu CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="RC.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a id="RC" class="navbar-brand" href="index.html">RC</a>
+
+      <!-- Botão hambúrguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#ede9e7;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links do menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#SobreMim">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feedbacks">Feedbacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#FaleComigo">Fale Comigo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Seção Apresentação -->
+  <section class="container my-5">
+  <div class="row">
+    
+    <!-- Coluna do texto -->
+    <div class="col-md-6">
+      <h1>Raquel <br> Cerqueira</h1>
+      <p>
+        Olá, sou Raquel e sou psicóloga. Tenho mais de uma década de experiência no setor,
+        trabalhando com números e analisando dados de algumas das maiores empresas do país.
+      </p>
+    </div>
+    
+    <!-- Coluna da imagem -->
+    <div class="col-md-6">
+      <img id="raquelc" src="raquelcerqueira.jpg"
+           alt="psicóloga Raquel Cerqueira"
+           class="img-fluid rounded"
+           style="max-width: 100%; height: auto;">
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- Sobre mim -->
+  <section id="SobreMim" class="container my-5">
+    <div>
+      <h2>Sobre Mim</h2>
+    </div>
+    <div>
+      <p>Há mais ou menos um ano, decidi começar minha própria consultoria para ajudar empresas de pequeno a médio porte. 
+      Acredito que empresários e donos de empresa de qualquer porte devem ter acesso a insights de dados e mentoria de qualidade.</p> 
+      <p>Juntos, vamos fazer o seu negócio prosperar.</p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="container my-5">
+  <h2 class="mb-4">Serviços</h2>
+  <div class="row justify-content-center">
+    
+    <!-- Caixa Minhas Habilidades -->
+    <div class="col-12 col-md-5 mb-4">
+      <div id="caixa1" class="p-4 shadow rounded bg-transparent h-100">
+        <h3 class="text-center mb-3">Minhas Habilidades</h3>
+        <ul>
+          <li>Pesquisa</li>
+          <li>Avaliação</li>
+          <li>Raciocínio</li>
+          <li>Desenvolvimento</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Caixa Serviços que Ofereço -->
+    <div  class="col-12 col-md-5 mb-4">
+      <div id="caixa2" class="p-4 shadow rounded bg-transparent h-100">
+        <h3 class="text-center mb-3">Serviços que Ofereço</h3>
+        <ul>
+          <li>Análise de Dados</li>
+          <li>Consultoria</li>
+          <li>Capital</li>
+        </ul>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+  <!-- Seção Feedbacks -->
+  <section id="feedbacks" class="container my-5" >
+    <div class="row">
+    <div class="col-md-6">
+      <h2>Trabalhei com <br> muitas pessoas</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate  nisi quam similique mollitia voluptate voluptatum saepe <br> tempora deserunt suscipit, deleniti voluptates dolore molestiae laboriosam doloribus excepturi facilis minima non?</p>
+    </div>
+    
+    <!-- Coluna da imagem -->
+    <div id="livro" class="col-md-6">
+      <img src="IMG2.png"
+           alt="livro"
+           class="img-fluid rounded"
+           style="max-width: 100%; height: 400px;">
+    </div>
+    </div>
+    
+  <br> <br> <br> <br>
+  <div id="caixas" class="d-flex overflow-auto gap-3">
+    <!-- Card 1 -->
+    <div class="card flex-shrink-0 shadow-sm" style="width: 300px;">
+      <div class="card-body">
+        <h4 class="card-title">Roberto Pereira</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Terapia Casal</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card flex-shrink-0 shadow-sm" style="width: 300px;">
+      <div class="card-body">
+        <h4 class="card-title">Isadora Silva</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Terapia Individual</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card flex-shrink-0 shadow-sm" style="width: 300px;">
+      <div class="card-body">
+        <h4 class="card-title">Isadora Silva</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Orientação Profissional</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card flex-shrink-0 shadow-sm" style="width: 300px;">
+      <div class="card-body">
+        <h4 class="card-title">Rafael Monteiro</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Terapia Individual</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Formulário Fale Comigo -->
+  
+  <section >
+    <h2 class="text-center">Fale Comigo</h2>
+    <div id="FaleComigo" class="bg-transparent container my-5 col-md-5 mb-5 mb-md-">
+      <form id="formWhatsApp" action="#" method="post">
+      <label for="fname">Nome Completo</label> <br>
+      <input type="text" id="fname" name="fname" placeholder="Digite nome completo" required> <br><br>
+
+      <label for="email">Email</label> <br>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required> <br><br>
+
+      <label for="whatsapp">WhatsApp</label> <br>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="Digite seu número" required> <br><br>
+      
+
+      <label for="atendimento">Tipo de Atendimento</label><br>
+      <select id="atendimento" name="atendimento" required>
+        <option value="" disabled selected>Selecione o atendimento</option>
+        <option value="Terapia Individual">Terapia Individual</option>
+        <option value="Terapia de Casal">Terapia de Casal</option>
+        <option value="Orientação Profissional">Orientação Profissional</option>
+        <option value="Outro">Outro</option>
+      </select><br><br>
+
+      <label for="Semana">Melhor Dia para Atendimento</label><br>
+      <select id="DiaSemana" name="Semana" required>
+        <option value="" disabled selected>Selecione o dia</option>
+        <option value="Segunda">Segunda-Feira</option>
+        <option value="Terca">Terça-Feira</option>
+        <option value="Quarta">Quarta-Feira</option>
+        <option value="Quinta">Quinta-Feira</option>
+        <option value="Sexta">Sexta-Feira</option>
+        <option value="Sabado">Sábado</option>
+      </select><br><br>
+
+      <input type="submit" value="Enviar" class="btn btn-primary" style="height: 40px; text-align: center; width: 100px;">
+    </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center bg-transparent">
+    <div class="container pt-4">
+      <!-- Redes sociais -->
+      <section class="mb-4">
+        <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://facebook.com/seuPerfil" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-body m-1" href="icons8-whatsapp-48.png" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://twitter.com/seuPerfil" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://instagram.com/seuPerfil" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://linkedin.com/in/seuPerfil" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright:
+      <a class="text-body" href="#">raquelcerqueirapsicologa.com</a>
+    </div>
+  </footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (!target) return;
+
+    // Scroll suave nativo
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Fecha o menu hambúrguer se estiver aberto
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      // Cria uma nova instância do collapse e fecha
+      new bootstrap.Collapse(navbarCollapse).hide();
+    }
+  });
+});
+</script>
+<script id="menu" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--WhatsApp--> 
+<script>
+document.getElementById("formWhatsApp").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // pega os valores
+  let nome = document.getElementById("fname").value;
+  let email = document.getElementById("email").value;
+  let telefone = document.getElementById("whatsapp").value;
+  let atendimento = document.getElementById("atendimento").value;
+
+  // monta a mensagem
+  let texto = `Olá! Gostaria de entrar em contato.%0A%0ANome: ${nome}%0AEmail: ${email}%0AWhatsApp: ${telefone}%0AAtendimento: ${atendimento}%0ADia da Semana: ${document.getElementById("DiaSemana").value}`;
+
+  // coloque aqui o SEU número (com DDI + DDD, sem espaços nem traços)
+  let numero = "5511995799811";
+
+  // abre o WhatsApp
+  window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
+});
+</script>
+
+
+</body>
+</html>
+
